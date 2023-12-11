@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Kite Brands</h1>
+    <ul>
+        <% brands.forEach(function(b) {%>
+            <li>
+            <%= b.brand %>
+                -
+            <%= b.cool ? 'cool' : 'complete kook' %>
+            </li>
+        <% }) %>
+    </ul>
+</body>
+</html>
+
+<!-- okay, so this is pulling from the array in data/brands-db where it's kicking each brand out and whether or not it's cool. -->
